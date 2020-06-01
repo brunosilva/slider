@@ -7,47 +7,6 @@ const gulp = require('gulp'),
 
 const isDevMode = functions.isDevMode();
 
-
-/*
- * Apaga uma ou mais pastas
- * Nesse momento está sendo utilizada para sincronizar a pasta de imagens de src com assets
- * 
-*/
-gulp.task('clear', () => {
-  const clearSrc = ['img'];
-
-  const tasks = clearSrc.map((key) => {
-    return gulp.src(paths.dist[key], { read: false, allowEmpty: true }).pipe(plugins.clean({ force: true }));
-  });
-
-  return plugins.merge(tasks);
-});
-
-
-/*
- * Clona os arquivos das pastas de entrada para a pasta de destino
- * Nesse momento está sendo utilizada para clonar as pastas de plugins
- * 
-*/
-gulp.task('clone', () => {
-  const tasks = paths.clonePathsAndFiles.map((cloneItem) => {
-    return gulp.src(cloneItem.src).pipe(gulp.dest(cloneItem.dist));
-  });
-
-  return plugins.merge(tasks);
-});
-
-/*
-* Minifica as imagens e exporta elas para a pasta de destino
-* 
-*/
-gulp.task('optimize-img', () => {
-  return gulp.src(paths.src.img)
-    .pipe(plugins.imagemin())
-    .pipe(gulp.dest(paths.dist.img));
-});
-
-
 /*
  * Transpila os arquivos scss e para css
  * 
@@ -81,7 +40,7 @@ gulp.task('scss-to-css', () => {
  * Gulp Run Tasks
  * 
 */
-gulp.task('dev', gulp.series('clear', 'clone', 'optimize-img', 'scss-to-css'));
+gulp.task('dev', gulp.series('scss-to-css'));
 
 gulp.task('prod', gulp.series('dev'));
 
