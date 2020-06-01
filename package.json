@@ -1,0 +1,19 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunosilva/slider.git"
+  },
+  "author": "Bruno Silva <brs.rsilva@gmail.com> (https://www.linkedin.com/in/bruno-silva0109/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunosilva/slider/issues"
+  },
+  "homepage": "https://github.com/brunosilva/slider#readme"
+}
