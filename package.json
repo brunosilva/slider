@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brunosilva/slider/issues"
   },
-  "homepage": "https://github.com/brunosilva/slider#readme"
+  "homepage": "https://github.com/brunosilva/slider#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
 }
