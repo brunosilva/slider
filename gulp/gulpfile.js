@@ -8,6 +8,17 @@ const gulp = require('gulp'),
 const isDevMode = functions.isDevMode();
 
 /*
+* Minifica as imagens e exporta elas para a pasta de destino
+* 
+*/
+gulp.task('optimize-img', () => {
+  return gulp.src(paths.src.img)
+    .pipe(plugins.imagemin())
+    .pipe(gulp.dest(paths.dist.img));
+});
+
+
+/*
  * Transpila os arquivos scss e para css
  * 
 */
@@ -40,7 +51,7 @@ gulp.task('scss-to-css', () => {
  * Gulp Run Tasks
  * 
 */
-gulp.task('dev', gulp.series('scss-to-css'));
+gulp.task('dev', gulp.series('optimize-img', 'scss-to-css'));
 
 gulp.task('prod', gulp.series('dev'));
 
