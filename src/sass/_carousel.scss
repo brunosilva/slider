@@ -5,33 +5,22 @@
 
     .slick-slider {
         width: 100%; 
-        display:flex; 
-        align-items: center;
+        @extend .middle-height;
 
         .slick-prev::before, .slick-next::before{
-            color: hsl(240, 38%, 20%);
+            color: $blue-arrow-slick;
         }
 
         .slick-prev.slick-arrow{
-            position: absolute; 
-            left: 645px; 
-            top: 465px; 
-            z-index: 9; 
-            width: 60px; 
-            height: 50px; 
+            left: 645px;  
             border-radius: 25px 0 0 25px;
-            color: hsl(240, 38%, 20%);
+            @extend .arrow-slick;
         }
 
         .slick-next.slick-arrow{
-            position: absolute; 
             right: 345px; 
-            top: 465px; 
-            z-index: 9; 
-            width: 60px; 
-            height: 50px; 
             border-radius: 0 25px 25px 0;
-            color: hsl(240, 38%, 20%);
+            @extend .arrow-slick;
         }
 
         .slick-arrow{
@@ -46,8 +35,7 @@
         }
 
         .user {
-            display:flex; 
-            align-items: center; 
+            @extend .middle-height;
             justify-content: center;
             position: relative;
             left: 280px;
@@ -67,17 +55,16 @@
         }
 
         .message{
+            @extend .middle-height;
             width: 650px; 
             z-index: 1001;
             position: absolute; 
             font-size: 32px; 
             font-family: 'Inter', sans-serif; 
             font-weight: 300; 
-            color: hsl(240, 38%, 20%); 
+            color: $blue-arrow-slick; 
             margin-left: 20px;
             height: 100%;
-            display: flex;
-            align-items: center;
 
             .quotes{
                 position: absolute; 
@@ -92,7 +79,7 @@
                 margin-top: 35px;
 
                 strong{
-                    color: hsl(240, 38%, 20%);
+                    color: $blue-arrow-slick;
                 }
             }
         }
