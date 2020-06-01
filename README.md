@@ -1,7 +1,6 @@
 # Bruno Silva - Coding Testimonials Slider
-![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Bem vindo! 👋
 
 Código de slider básico para estudos. Iniciando com carousel, com estrutura básica de html e css em um único arquivo para criar o layout.
 <!-- 
