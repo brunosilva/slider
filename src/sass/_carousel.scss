@@ -21,7 +21,11 @@
             @extend .middle-height;
             justify-content: center;
             position: relative;
-            left: 190px;
+            left: 280px;
+
+            @media screen and (max-width: 1024px){
+                left: 190px; 
+            }
 
             .photograph{    
                 position: absolute;
@@ -75,7 +79,7 @@
             .slick-prev {
                 left: -17px;
             }
-
+            
             .slick-next {
                 right: -17px;
             }
@@ -101,7 +105,6 @@
                     margin-left: 100px; 
                     top: 360px;
                 }
-    
             }
 
             .user{
