@@ -10,31 +10,6 @@
         .slick-prev::before, .slick-next::before{
             color: $blue-arrow-slick;
         }
-
-        .slick-prev.slick-arrow{
-            left: 645px;  
-            border-radius: 25px 0 0 25px;
-            @extend .arrow-slick;
-            
-            @media screen and (max-width: 768px){
-                left: 40px; 
-            }
-        }
-
-        .slick-next.slick-arrow{
-            right: 345px; 
-            border-radius: 0 25px 25px 0;
-            @extend .arrow-slick;
-
-            @media screen and (max-width: 768px){
-                right: 186px; 
-            }
-        }
-
-        .slick-arrow{
-            background-color: $white;
-            box-shadow: 3px 1px 6px $black;
-          }
     }
 
     .carousel{
@@ -46,7 +21,7 @@
             @extend .middle-height;
             justify-content: center;
             position: relative;
-            left: 280px;
+            left: 190px;
 
             .photograph{    
                 position: absolute;
@@ -97,12 +72,14 @@
 @media screen and (max-width: 768px){
     .container{
         .carousel{
-            .slick-slider{
-                .slick-next.slick-arrow{
-                    right: 140px; 
-                    border-radius: 0 25px 25px 0;
-                }
+            .slick-prev {
+                left: -17px;
             }
+
+            .slick-next {
+                right: -17px;
+            }
+
             .slick-list{
                 .slick-slide{
                     display: flex;
@@ -142,6 +119,25 @@
                 .background{
                     position: relative;    
                     max-width: 100%;
+                }
+            }
+        }
+
+        .curve{
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+    .container{
+        .carousel{
+            .message{
+                .quotes{
+                    position: absolute; 
+                    z-index: -1;
+                    margin-left: 100px; 
+                    top: 680px;
                 }
             }
         }
