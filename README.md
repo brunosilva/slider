@@ -96,13 +96,13 @@ Criado três definições para compilar.
 ```
 
 ---------------------------------------------------------------------------------------------------------------------
-|                                                                                                                   |
-| OBSERVAÇÕES: para registro...                                                                                     |
-|                                                                                                                   |
-| Para executar, estou abrindo o git-bash, navegando até a raiz do projeto e executando um dos scripts acima!       |
-|                                                                                                                   |
-| Para manter o sourcemap e conseguir inspecionar elemento normalmente executo **npm run dev**                      |
-|                                                                                                                   |
+
+OBSERVAÇÕES: para registro... 
+
+Para executar, estou abrindo o git-bash, navegando até a raiz do projeto e executando um dos scripts acima!
+
+Para manter o sourcemap e conseguir inspecionar elemento normalmente executo **npm run dev** 
+
 ---------------------------------------------------------------------------------------------------------------------
 
 
