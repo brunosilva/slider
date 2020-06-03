@@ -3,8 +3,11 @@
 ## Bem vindo! 👋
 
 Slider/Carousel, utilizando Bootstrap somente para controlar o "container".
+
 Plugin **slick-slider** para dar vida ao carousel, e criado classes especificas para desenhar o formato desejado.
+
 Gulp + SASS para desenhar o estilo e compilar para css.
+
 O modelo criado ficou como na imagem a seguir: (Desktop e Mobile)
 
 ![desktop](https://user-images.githubusercontent.com/17436856/83641094-6d396c00-a583-11ea-9e5b-9ff0da563ace.png)
@@ -12,17 +15,20 @@ O modelo criado ficou como na imagem a seguir: (Desktop e Mobile)
 ![mobile](https://user-images.githubusercontent.com/17436856/83641127-7b878800-a583-11ea-8476-631afd2132ec.png)
 
 
-##Sobre desenvolvimento
+## Sobre desenvolvimento
 
-###Gulp
+### Gulp
 
 Criado estrutura em formado de configuração, pegando como modelo o formato utilizado no **webpack** _(Estrutura definida por um colega de trabalho e como gostaria de entender, apliquei a mesma neste projeto)._
+
 - gulp-functions
+
 Atualmente tem somente uma function, que verifica se a compilação está sendo realizada em modo produção ou não!
 Mas toda nova functiona necessária, deve ser escrita em gulp-functions.
 
 - gulp-paths
-array com todos os caminhos necessários para compilação: src, assets, js, css, sass e images.
+
+Array com todos os caminhos necessários para compilação: src, assets, js, css, sass e images.
 Em module.exports foi definido theme e dentro deste tem a primeira configuração e única neste caso!
 ```
 theme: {
@@ -57,11 +63,13 @@ theme: {
 ```
 
 - gulp-plugins
+
 Contém referência de todas os plugins instalados.
 
 - gulpfile
+
 Com apenas um(1) task para compilar o css.
-**gulp.task('scss-to-css'** - ela busca dentro de _gulp-paths_ cada configuração existente dentro de theme, compila e gera um arquivo css com o nome definido no filename.
+**"scss-to-css"** - ela busca dentro de _gulp-paths_ cada configuração existente dentro de theme, compila e gera um arquivo css com o nome definido no filename.
 
 
 
