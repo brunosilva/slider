@@ -1,6 +1,6 @@
 # Bruno Silva - Coding Testimonials Slider
 
-Projeto de inspiração é do [https://www.frontendmentor.io/]
+Projeto de inspiração é do [https://www.frontendmentor.io/](https://www.frontendmentor.io/)
 
 
 ## Bem vindo! 👋
