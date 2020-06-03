@@ -56,7 +56,12 @@ theme: {
 },
 ```
 
+- gulp-plugins
+Contém referência de todas os plugins instalados.
 
+- gulpfile
+Com apenas um(1) task para compilar o css.
+**gulp.task('scss-to-css'** - ela busca dentro de _gulp-paths_ cada configuração existente dentro de theme, compila e gera um arquivo css com o nome definido no filename.
 
 
 
