@@ -86,13 +86,24 @@ Criado três definições para compilar.
 
 * prod: compila e gera arquivos minificado
 
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "cross-env NODE_ENV=development node_modules/.bin/gulp --gulpfile gulp/gulpfile.js --mode development",
+    "dev": "cross-env NODE_ENV=development node_modules/.bin/gulp dev --gulpfile gulp/gulpfile.js --mode development",
+    "prod": "cross-env NODE_ENV=production node_modules/.bin/gulp prod --gulpfile gulp/gulpfile.js --mode production"
+}
+```
 
-OBSERVAÇÕES: para registro...
-
-Para executar, estou abrindo o git-bash, navegando até a raiz do projeto e executando um dos scripts acima! 
-
-Para manter o sourcemap e conseguir inspecionar elemento normalmente executo **npm run dev**
-
+---------------------------------------------------------------------------------------------------------------------
+|                                                                                                                   |
+| OBSERVAÇÕES: para registro...                                                                                     |
+|                                                                                                                   |
+| Para executar, estou abrindo o git-bash, navegando até a raiz do projeto e executando um dos scripts acima!       |
+|                                                                                                                   |
+| Para manter o sourcemap e conseguir inspecionar elemento normalmente executo **npm run dev**                      |
+|                                                                                                                   |
+---------------------------------------------------------------------------------------------------------------------
 
 
 
