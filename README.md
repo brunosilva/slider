@@ -2,6 +2,7 @@
 
 Projeto de inspiração é do [https://www.frontendmentor.io/](https://www.frontendmentor.io/)
 
+**FOCO/OBJETIVO:** Estudo de como montar um carousel utilizando um puglin e principalmente o Gulp (em uma estrutura desenvolvida por colega de trabalho)
 
 ## Bem vindo! 👋
 
