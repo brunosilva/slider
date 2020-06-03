@@ -4,7 +4,7 @@
 
 Slider/Carousel, utilizando Bootstrap somente para controlar o "container".
 
-Plugin **slick-slider** para dar vida ao carousel, e criado classes especificas para desenhar o formato desejado.
+Plugin **[slick-slider](https://kenwheeler.github.io/slick/)** para dar vida ao carousel, e criado classes especificas para desenhar o formato desejado.
 
 Gulp + SASS para desenhar o estilo e compilar para css.
 
@@ -12,7 +12,7 @@ O modelo criado ficou como na imagem a seguir: (Desktop e Mobile)
 
 ![desktop](https://user-images.githubusercontent.com/17436856/83641094-6d396c00-a583-11ea-9e5b-9ff0da563ace.png)
 
-![mobile](https://user-images.githubusercontent.com/17436856/83641127-7b878800-a583-11ea-8476-631afd2132ec.png)
+![mobile](https://user-images.githubusercontent.com/17436856/83644094-44b37100-a587-11ea-9411-0de8e6b3605f.png)
 
 
 ## Sobre desenvolvimento
