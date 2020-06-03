@@ -1,5 +1,8 @@
 # Bruno Silva - Coding Testimonials Slider
 
+Projeto de inspiração é do [https://www.frontendmentor.io/]
+
+
 ## Bem vindo! 👋
 
 Slider/Carousel, utilizando Bootstrap somente para controlar o "container".
